@@ -7,6 +7,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -18,6 +19,7 @@ public class YoutubeApiApplication {
             "https://www.googleapis.com/youtube/v3/channels?part=statistics&id=UCZf__ehlCEBPop-_sldpBUQ&key=AIzaSyCcafFw0QtFpLugA6mb1XZ4XLa62zMHass";
 
     @RequestMapping("/home")
+    @CrossOrigin
     String hello() {
         String ret;
         try {
