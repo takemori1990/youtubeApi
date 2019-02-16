@@ -1,4 +1,4 @@
-package com.example.youtubeApi;
+package jp.co.yt;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
